@@ -16,6 +16,12 @@ An engaging and educational web project aimed at spreading awareness about envir
 - **Frontend:** HTML5, CSS3, JavaScript
   
 -- **Responsive design** for desktop and mobile
+
+# Objectives:
+1.This website supports environmental education and action aligned with:
+2.UN Sustainable Development Goals (SDGs)
+3.Youth awareness campaigns
+4.Community green initiatives
   
 🚀 How to Run Locally
  1. **Clone the repository**
@@ -24,8 +30,3 @@ An engaging and educational web project aimed at spreading awareness about envir
    cd My_First_Website
 
 
-# Objectives:
-1.This website supports environmental education and action aligned with:
-2.UN Sustainable Development Goals (SDGs)
-3.Youth awareness campaigns
-4.Community green initiatives
