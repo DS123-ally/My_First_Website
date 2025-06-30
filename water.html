@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Save Water</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e0f7fa;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00796b;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .flowchart {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0;
+    }
+
+    .flow-box {
+      background-color: #b2dfdb;
+      border: 2px solid #00796b;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: 10px;
+      text-align: center;
+      width: 250px;
+    }
+
+    .arrow {
+      font-size: 24px;
+      color: #00796b;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    
+    .drop {
+      position: absolute;
+      top: -10px;
+      width: 10px;
+      height: 10px;
+      background: #00bcd4;
+      border-radius: 50%;
+      animation: fall 5s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes fall {
+      0% {
+        top: -10px;
+        opacity: 0.8;
+      }
+      100% {
+        top: 100%;
+        opacity: 0;
+      }
+    }
+
+    .image-box {
+      text-align: center;
+      margin: 30px auto;
+    }
+
+    .image-box img {
+      max-width: 50%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💧 Save Water, Secure the Future 🌍</h1>
+    <!-- Animated Drops -->
+    <div class="drop" style="left: 20%; animation-delay: 0s;"></div>
+    <div class="drop" style="left: 50%; animation-delay: 1s;"></div>
+    <div class="drop" style="left: 80%; animation-delay: 2s;"></div>
+  </header>
+
+  <section>
+    <h2>Why Conserve Water?</h2>
+    <p>
+      Water is a vital and limited natural resource. Conserving water ensures access for future generations, supports life on Earth, and helps maintain ecological balance.
+    </p>
+  </section>
+
+  <section>
+    <h2>Steps to Conserve Water</h2>
+    <ul>
+      <li>Fix leaking taps and pipes immediately.</li>
+      <li>Use water-efficient appliances.</li>
+      <li>Turn off taps while brushing or shaving.</li>
+      <li>Collect and use rainwater wisely.</li>
+      <li>Spread awareness in your community.</li>
+      <li>Practice greywater reuse for gardening.</li>
+    </ul>
+  </section>
+
+  <section class="image-box">
+    <h2>Water is Life 💙</h2>
+    <!-- Replace the src with your own image link if needed -->
+    <img src="water.jpg" alt="Save Water">
+  </section>
+
+<section>
+  <h2>Flowchart: Water Conservation Process</h2>
+  <button onclick="toggleFlowchart()">Toggle Flowchart</button>
+  <div class="flowchart" id="flowchart">
+    <div class="flow-box">
+      <a href="https://www.unesco.org/en/biodiversity/education" target="_blank">🌐 Awareness and Education</a>
+    </div>
+    <div class="arrow">⬇️</div>
+    <div class="flow-box">
+      <a href="https://www.housing.vic.gov.au/household-changes" target="_blank">🌐 Household Changes</a>
+    </div>
+    <div class="arrow">⬇️</div>
+    <div class="flow-box">
+      <a href="https://communityinitiatives.org/" target="_blank">🌐 Community Initiatives</a>
+    </div>
+    <div class="arrow">⬇️</div>
+    <div class="flow-box">
+      <a href="https://19january2017snapshot.epa.gov/www3/region9/water/recycling/" target="_blank">🌐 Water Recycling & Reuse</a>
+    </div>
+    <div class="arrow">⬇️</div>
+    <div class="flow-box">
+      <a href="https://www.sustainablefutures.org/" target="_blank">🌐 Sustainable Future</a>
+    </div>
+  </div>
+</section>
+
+  
+  <section>
+    <h2>Advantages of Saving Water</h2>
+    <ul>
+      <li>Preserves water for future generations.</li>
+      <li>Lowers energy consumption and water bills.</li>
+      <li>Protects aquatic life and natural habitats.</li>
+      <li>Improves resilience to droughts and climate change.</li>
+      <li>Promotes sustainable development.</li>
+    </ul>
+  </section>
+  <div style="text-align: center; margin: 20px 0;">
+  <a href="text.html"><button onclick="goBack()">⬅ Back</button></a>
+</div>
+
+  <footer>
+    <p>&copy; 2025 SaveWater Initiative | Every Drop Counts 💧</p>
+  </footer>
+  <script>
+  function toggleFlowchart() {
+    const chart = document.getElementById("flowchart");
+    chart.style.display = chart.style.display === "flex" ? "none" : "flex";
+  }
+
+  function goBack() {
+    window.history.back(); 
+  }
+</script>
+</body>
+</html>

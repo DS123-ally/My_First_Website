@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Nature | Save Future</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to right, #dce35b, #45b649);
+            color: #222;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        nav h1 {
+            font-size: 1.8rem;
+            color: #2e7d32;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .hero {
+            background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: green;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+        
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-btn {
+            background-color: #2e7d32;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .section {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: green;
+        }
+        
+        .tips {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .tips li {
+            background-color: #ffffff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            min-width: 150px;
+        }
+        
+        #pledge input {
+            padding: 0.5rem;
+            border: 2px solid #2e7d32;
+            border-radius: 5px;
+            margin-right: 0.5rem;
+            width: 200px;
+        }
+        
+        #pledge button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #message {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        
+        #certificate {
+            display: none;
+            margin-top: 2rem;
+            padding: 2rem;
+            border: 2px dashed #2e7d32;
+            background-color: #fafff0;
+            border-radius: 10px;
+            color: #1b5e20;
+        }
+        
+        #certificate img {
+            width: 120px;
+            margin-bottom: 1rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        footer img {
+            width: 60px;
+            display: block;
+            margin: 0 auto 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                margin-top: 1rem;
+            }
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Save Nature</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#help">How to Help</a></li>
+                <li><a href="#pledge">Pledge</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Save Nature. Save Future.</h2>
+        <p>Join the movement to protect our planet and ensure a green tomorrow.</p>
+        <a href="https://pledge.mygov.in/unitefornature/" class="hero-btn">Take a Pledge</a>
+    </section>
+
+    <main>
+        <section id="about" class="section">
+            <h2>About the Cause</h2>
+            <p>Nature is the foundation of our survival. Protecting it ensures a better future for all living beings. Let's act before it's too late.</p>
+        </section>
+
+        <section id="help" class="section">
+            <h2>How You Can Help</h2>
+            <ul class="tips">
+                <li>🌱 Plant trees</li>
+                <li>🚯 Avoid single-use plastics</li>
+                <li>♻️ Recycle and reuse</li>
+                <li>🚲 Use eco-friendly transport</li>
+                <li>💡 Save energy</li>
+            </ul>
+        </section>
+
+        <section id="pledge" class="section">
+            <h2>Take a Green Pledge</h2>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <button onclick="submitPledge()">Submit</button>
+            <p id="message"></p>
+            <div id="certificate"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Save Nature Initiative. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function takePledge() {
+            document.getElementById("pledge").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+        function submitPledge() {
+            const name = document.getElementById("name").value.trim();
+            const message = document.getElementById("message");
+            const certificate = document.getElementById("certificate");
+
+            if (name !== "") {
+                message.textContent = `Thank you, ${name}, for taking the pledge! 🌍`;
+                message.style.color = "green";
+
+                certificate.style.display = "block";
+                certificate.innerHTML = `
+          <img src="https://images.seeklogo.com/logo-png/46/1/g20-india-2023-logo-png_seeklogo-466895.png">
+          <h3>🌿 Certificate of Commitment 🌿</h3>
+          <p>This certifies that</p>
+          <h2>${name}</h2>
+          <p>has pledged to protect and preserve nature for a better future.</p>
+          <p><em>"Together we can make a difference!"</em></p>
+          <br>
+          <button id="downloadBtn">Download Certificate</button>
+          <p id="downloadMessage" style="margin-top: 1rem; color: blue;"></p>
+        `;
+
+                document.getElementById("downloadBtn").addEventListener("click", function() {
+                    const downloadMessage = document.getElementById("downloadMessage");
+                    downloadMessage.textContent = "Certificate downloaded!";
+                });
+            } else {
+                message.textContent = "Please enter your name to take the pledge.";
+                message.style.color = "red";
+                certificate.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

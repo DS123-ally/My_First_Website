@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recycle Waste - Awareness & Process</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right top, #e0f7e9, #ffffff);
+      background-attachment: fixed;
+      color: #333;
+    }
+
+
+header {
+  background-color: rgba(46, 125, 50, 0.9);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: #4caf50;
+}
+
+.title {
+  text-align: left;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #1b5e20;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.key-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.point {
+  background-color: #e8f5e9;
+  padding: 1rem;
+  border-left: 5px solid #388e3c;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.flowchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.flow-box {
+  display: none;
+  background-color: #f1f8e9;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow {
+  font-size: 2rem;
+  display: none;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #c8e6c9;
+  font-size: 1rem;
+  color: #2e7d32;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img 
+        src="https://cdn4.vectorstock.com/i/1000x1000/48/58/creative-recycle-symbol-vector-2334858.jpg"
+        class="logo" 
+        alt="Recycle"
+      />
+      <div class="title">
+        <h1>♻️ Recycle Waste</h1>
+        <p>Reduce | Reuse | Recycle</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section">
+      <h2>What is Recycling?</h2>
+      <p>
+        Recycling is the process of converting waste materials into new products to prevent the waste of potentially useful materials, reduce the consumption of fresh raw materials, and decrease energy usage and pollution. It plays a crucial role in sustainable waste management.
+      </p>
+    </div>
+
+```
+<div class="section">
+  <h2>Advantages of Recycling</h2>
+  <ul>
+    <li>Reduces waste sent to landfills and incinerators</li>
+    <li>Conserves natural resources such as timber, water, and minerals</li>
+    <li>Prevents pollution by reducing the need to collect new raw materials</li>
+    <li>Saves energy and reduces greenhouse gas emissions</li>
+    <li>Supports domestic manufacturing and creates green jobs</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Key Points to Remember</h2>
+  <div class="key-points">
+    <div class="point"><strong>Know Your Materials:</strong> Separate recyclables like paper, plastic, glass, and metal.</div>
+    <div class="point"><strong>Clean and Dry:</strong> Always rinse containers before recycling.</div>
+    <div class="point"><strong>No Contamination:</strong> Don’t mix non-recyclables with recyclables.</div>
+    <div class="point"><strong>Recycle E-Waste:</strong> Use authorized centers for electronic waste.</div>
+    <div class="point"><strong>Compost Organic Waste:</strong> Compost food scraps and yard waste instead of throwing them away.</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Recycling Process Flowchart</h2>
+  <div class="flowchart" id="flowchart">
+    <div class="flow-box">1️⃣ Waste Collection</div>
+    <div class="arrow">⬇️</div>
+
+    <div class="flow-box">2️⃣ Sorting Waste Materials</div>
+    <div class="arrow">⬇️</div>
+
+    <div class="flow-box">3️⃣ Cleaning & Processing</div>
+    <div class="arrow">⬇️</div>
+
+    <div class="flow-box">4️⃣ Manufacturing New Products</div>
+    <div class="arrow">⬇️</div>
+
+    <div class="flow-box">5️⃣ Purchasing Recycled Products</div>
+    <div class="arrow">⬇️</div>
+
+    <div class="flow-box">6️⃣ Promoting a Circular Economy</div>
+  </div>
+  <button onclick="showNextStep()">Next Step</button>
+</div>
+```
+
+  </main>
+  <div style="text-align: center; margin-top: 1rem;">
+    <button onclick="goBack()">⬅️ Back</button>
+  </div>
+  <footer>
+    
+    🌍 Every small step counts! Start recycling today for a greener tomorrow.
+  </footer>
+
+  <script>
+    let currentStep = 0;
+
+    function showNextStep() {
+      const flowItems = document.querySelectorAll('.flow-box, .arrow');
+
+      if (currentStep < flowItems.length) {
+        flowItems[currentStep].style.display = 'block';
+        currentStep++;
+      } else {
+        alert("✅ You’ve completed the recycling process!");
+      }
+    }
+  </script>
+
+</body>
+</html> 

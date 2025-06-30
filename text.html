@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Nature Save Future</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        <!-- body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f2f5f0;
+        }
+        
+        .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            height: 420px;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            z-index: 9999;
+            transition: all 0.3s ease;
+        }
+        
+        .chat-header {
+            background: #000000;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        
+        .chat-box {
+            flex: 1;
+            padding: 12px;
+            overflow-y: auto;
+            background-image: url('https://sun-surfer.com/photos/2014/08/Dark-Forest-New-Zealand.jpg');
+            background-size: cover;
+        }
+        
+        .chat-message {
+            margin: 8px 0;
+            max-width: 80%;
+            padding: 8px 12px;
+            border-radius: 20px;
+            line-height: 1.4;
+            word-wrap: break-word;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .user {
+            align-self: flex-end;
+            background-color: #50e913;
+            margin-left: auto;
+        }
+        
+        .bot {
+            align-self: flex-start;
+            background-color: #eeeeee;
+            margin-right: auto;
+        }
+        
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            background: #0f0f0f;
+        }
+        
+        .chat-input input {
+            flex: 1;
+            border: none;
+            padding: 10px;
+            font-size: 0.9em;
+            border-radius: 20px;
+            background: #f1f0f0;
+        }
+        
+        .chat-input button {
+            border: none;
+            background: #14cc5a;
+            color: rgb(7, 7, 7);
+            padding: 8px 12px;
+            margin-left: 8px;
+            border-radius: 50%;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .chat-input button:hover {
+            background: #05a864;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .chat-container {
+                width: 100%;
+                height: 100vh;
+                bottom: 0;
+                right: 0;
+                border-radius: 0;
+            }
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        .hero {
+            background-image: url("background.jpg");
+            color: #eeeeee;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🌿 Save Nature <span>Save Future</span></div>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </nav>
+    </header>
+    <div class="counter ">
+        🌳 Trees Planted So Far: <span id="tree-count ">12,348</span>
+    </div>
+
+    <button class="cta-button " onclick="openPopup() ">🌳 Take Action - Plant a Tree!</button>
+
+    <div class="chat-container ">
+        <div class="chat-header ">Chat with Us</div>
+        <div class="chat-box " id="chat-box "></div>
+        <div class="chat-input ">
+            <input type="text " id="user-input " placeholder="Type a message... " />
+            <button onclick="sendMessage() ">➤</button>
+        </div>
+    </div>
+
+    <section class="hero ">
+        <h1>Protect the Earth</h1>
+        <p>Together we can create a sustainable future.</p>
+    </section>
+
+    <section class="about " id="about ">
+        <h2>About Us</h2>
+        <p>Save Nature Save Future is dedicated to promoting environmental awareness and sustainable practices. Our goal is to educate and inspire action on conserving natural resources and living in harmony with nature.</p>
+    </section>
+
+    <section class="goals " id="goals ">
+        <h2>Sustainable Goals</h2>
+        <div class="goal-box ">
+            <img src="water.jpg " alt="Save Water " />
+            <h3>Save Water</h3>
+            <p>Water is life. Use it wisely, fix leaks, and harvest rainwater to preserve it for future generations.</p>
+            <a href="water.html " class="btn " target="_blank ">Read More</a>
+
+        </div>
+        <div class="goal-box ">
+            <img src="trees.jpg " alt="Plant Trees " />
+            <h3>Plant Trees</h3>
+            <p>Trees purify air, provide oxygen, and support biodiversity. Plant more trees to restore balance.</p>
+            <a href="trees.html " class="btn " target="_blank ">Read More</a>
+
+        </div>
+        <div class="goal-box ">
+            <img src="energy.jpg " alt="Save Energy " />
+            <h3>Save Energy</h3>
+            <p>Turn off lights, use renewable energy sources, and make your home energy-efficient to reduce carbon footprint.</p>
+            <a href="energy.html " class="btn " target="_blank ">Read More</a>
+        </div>
+        <div class="goal-box ">
+            <img src="recycle.jpg " alt="Recycle " />
+            <h3>Recycle</h3>
+            <p>Recycling reduces waste, conserves natural resources, and lowers greenhouse gas emissions. Start sorting your waste and reuse materials whenever possible.</p>
+            <a href="recycle.html " class="btn " target="_blank ">Read More</a>
+        </div>
+    </section>
+
+    <section class="feedback " id="feedback ">
+
+        <section class="feedback" id="feedback">
+            <h2>Feedback</h2>
+            <form id="feedback-form" onsubmit="handleFeedbackSubmit(event)">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="feedback-success" style="color: green; display: none; font-weight: bold; margin-top: 10px;">
+                ✅ Feedback submitted successfully!
+            </p>
+        </section>
+        <script>
+            function sendMessage() {
+                const input = document.getElementById("user-input ");
+                const message = input.value.trim();
+                if (!message) return;
+
+                addMessage("user ", message);
+                input.value = " ";
+
+                setTimeout(() => {
+                    const reply = generateBotReply(message);
+                    addMessage("bot ", reply);
+                }, 500);
+            }
+
+            function addMessage(sender, text) {
+                const chatBox = document.getElementById("chat-box ");
+                const msgDiv = document.createElement("div ");
+                msgDiv.className = `chat-message ${sender}`;
+                msgDiv.textContent = text;
+                chatBox.appendChild(msgDiv);
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+
+            function generateBotReply(userMessage) {
+                const msg = userMessage.toLowerCase();
+                if (msg.includes("hello ")) return "Hello! How can I help you today? ";
+                if (msg.includes("what is your name ")) return "I am a Chatty Bot. ";
+                if (msg.includes("price ")) return "Our pricing is flexible. Please tell me what you 're looking for.";
+                if (msg.includes("support")) return "Our support team is online 24/7.";
+                if (msg.includes("bye")) return "Goodbye! Have a great day.";
+                return "I'm not sure I understand. Could you rephrase? ";
+            }
+
+            window.addEventListener('scroll', () => {
+                const btn = document.querySelector('.back-to-top');
+                btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+            });
+
+            function incrementCounter() {
+                const counter = document.getElementById('tree-count');
+                let count = parseInt(counter.textContent.replace(/,/g, ''));
+                count += 1;
+                counter.textContent = count.toLocaleString();
+            }
+
+            function openPopup() {
+                incrementCounter();
+                const popup = window.open('', 'treePopup', 'width=400,height=400');
+                popup.document.write(`
+        <title>🎉 You Planted a Tree!</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+            background-color: #e0f7e0;
+            color: #2e7d32;
+          }
+          img {
+            max-width: 100%;
+            border-radius: 10px;
+          }
+        </style>
+        <h2>Thank you for planting a tree! 🌳</h2>
+        <p>You’re helping make the world greener 🌍</p>
+        <img src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/how-to-plant-a-tree-update-hero.jpg " alt="Tree "/>
+      `);
+            }
+
+            function handleFeedbackSubmit(event) {
+                event.preventDefault();
+                document.getElementById('feedback-success').style.display = 'block';
+                document.getElementById('feedback-form').reset();
+                setTimeout(() => {
+                    document.getElementById('feedback-success').style.display = 'none';
+                }, 5000);
+            }
+        </script>
+        <div style="text-align: center; margin: 20px 0; ">
+            <a href="pledge.html "><button onclick="goBack() ">Next</button></a>
+        </div>
+        <footer>
+            <ul class="example-2 ">
+                <li class="icon-content ">
+                    <a data-social="whatsapp " aria-label="Whatsapp " href="https://api.whatsapp.com/send?phone=+112067101079&amp;text=Save%20this%20to%20your%20Favorites%20-%20@wilsondesouza ">
+                        <div class="filled "></div>
+                        <svg xml:space="preserve " viewBox="0 0 24 24 " class="bi bi-whatsapp " fill="currentColor " height="24 " width="24 " xmlns="http://www.w3.org/2000/svg ">
+        <path
+          fill="currentColor "
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198
+                0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421
+                7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815
+                11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z "
+        ></path>
+      </svg>
+                    </a>
+                    <div class="tooltip ">Whatsapp</div>
+                </li>
+                <li class="icon-content ">
+                    <a data-social="facebook " aria-label="Facebook " href="https://www.facebook.com/ ">
+                        <div class="filled "></div>
+                        <svg xml:space="preserve " viewBox="0 0 24 24 " class="bi bi-facbook " fill="currentColor " height="24 " width="24 " xmlns="http://www.w3.org/2000/svg ">
+        <path
+          fill="currentColor "
+          d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424
+                4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z "
+        ></path>
+      </svg>
+                    </a>
+                    <div class="tooltip ">Facebook</div>
+                </li>
+                <li class="icon-content ">
+                    <a data-social="instagram " aria-label="Instagram " href="https://www.instagram.com/ ">
+                        <div class="filled "></div>
+                        <svg xml:space="preserve " viewBox="0 0 16 16 " class="bi bi-instagram " fill="currentColor " height="16 " width="16 " xmlns="http://www.w3.org/2000/svg ">
+        <path
+          fill="currentColor "
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719
+                1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9
+                3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047
+                1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598
+                2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988
+                1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334 "
+        ></path>
+      </svg>
+                    </a>
+                    <div class="tooltip ">Instagram</div>
+                </li>
+            </ul>
+
+        </footer>
+
+</body>
