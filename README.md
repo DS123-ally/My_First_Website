@@ -2,6 +2,11 @@ WEBSITE NAME:  🌿 Save Nature Save Future
 
 An engaging and educational web project aimed at spreading awareness about environmental conservation, sustainable practices, and green living. This site allows users to explore themes like saving water,       planting trees, recycling, conserving energy, and more.
 
+
+![image alt]("https://github.com/DS123-ally/My_First_Website/blob/dd682d63ff47360d19375d1db7145d7ac4814bde/Screenshot%202025-06-30%20192351.png")
+
+
+
 🧩 FEATURES:
 - 🌳 Tree counter and interactive pledge system
 - 💬 Embedded chatbot for user interaction
