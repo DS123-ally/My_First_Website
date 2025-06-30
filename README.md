@@ -4,6 +4,7 @@ An engaging and educational web project aimed at spreading awareness about envir
 
 
 ![image alt](https://github.com/DS123-ally/My_First_Website/blob/dd682d63ff47360d19375d1db7145d7ac4814bde/Screenshot%202025-06-30%20192351.png)
+![image alt](https://github.com/DS123-ally/My_First_Website/blob/72c3a97f2707c37283630665f175fef67d1cdad3/Screenshot%202025-06-30%20192606.png)
 
 
 
