@@ -23,11 +23,9 @@ An engaging and educational web project aimed at spreading awareness about envir
    git clone https://github.com/DS123-ally/My_First_Website.git
    cd My_First_Website
 
+
 # Objectives:
 1.This website supports environmental education and action aligned with:
-
 2.UN Sustainable Development Goals (SDGs)
-
 3.Youth awareness campaigns
-
 4.Community green initiatives
