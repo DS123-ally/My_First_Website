@@ -18,7 +18,7 @@ An engaging and educational web project aimed at spreading awareness about envir
 -- **Responsive design** for desktop and mobile
 
 # Objectives:
-1.This website supports environmental education and action aligned with:
+1.This website supports environmental education and action aligned with
 2.UN Sustainable Development Goals (SDGs)
 3.Youth awareness campaigns
 4.Community green initiatives
