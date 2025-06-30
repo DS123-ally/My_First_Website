@@ -19,9 +19,13 @@ An engaging and educational web project aimed at spreading awareness about envir
 
 # Objectives:
 1.This website supports environmental education and action aligned with
+
 2.UN Sustainable Development Goals (SDGs)
+
 3.Youth awareness campaigns
+
 4.Community green initiatives
+
   
 🚀 How to Run Locally
  1. **Clone the repository**
